@@ -1,0 +1,52 @@
+root{
+    --bs-font-san-serif:'Rubik',san-serif;
+  }
+  .container-xxl {
+    max-width: 1520px;
+  }
+  body {
+    font-family: 'Roboto Slab', sans-serif,cursive;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Tillana', cursive;
+    background-image: url("/img/bg7.svg");
+    background-color: rgb(252, 224, 190);
+  } 
+  header{
+    background-color: bisque;
+  }
+  
+  a { color: var(--bs-dark); }
+  
+  
+  /* Category Card */
+  .category__link {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    transition: 250ms all;
+  }
+  
+  .category__link:hover {
+    transform: scale(1.1);
+    background-color: bisque;
+  }
+  
+  .category__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,.16);
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .category__img--large {
+    height: 330px;
+  }
+  
+  .category__img img {
+    width: 100%;
+    object-fit: cover;
+  }
