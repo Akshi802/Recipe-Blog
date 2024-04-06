@@ -1,0 +1,14 @@
+<%- include('layouts/main') %>
+
+<div class="container mt-4">
+  <h2 class="mb-4">Confirm Delete</h2>
+  <div class="alert alert-danger">
+    <p>Are you sure you want to delete the recipe: <strong><%- recipe.name %></strong>?</p>
+    <form action="/delete-recipe/<%- recipe._id %>" method="post">
+      <button type="submit" class="btn btn-danger">Delete</button>
+      <a href="/" class="btn btn-secondary">Cancel</a>
+    </form>
+  </div>
+</div>
+
+<%- include('layouts/main') %>
